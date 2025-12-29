@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prettiest janjona</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="card">
+   <h1><span class="heart">💗</span>Prettiest janjona <span class="heart">💗</span></h1>
+
+
+    <div class="image-box">
+        <img src="assest/image.jpg" alt="janjona">
+    </div>
+
+    <button class="btn" onclick="toggleMessage()">Just for you</button>
+
+    <p id="msg" class="hidden">
+        2026 can’t start<br>without those<br>beautiful eyes
+    </p>
+
+    <audio controls>
+        <source src="assest/mm.mp3" type="audio/mpeg">
+        Your browser does not support audio.
+    </audio>
+</div>
+
+<script>
+function toggleMessage() {
+    const msg = document.getElementById("msg");
+
+    if (msg.style.display === "block") {
+        msg.style.display = "none";
+    } else {
+        msg.style.display = "block";
+    }
+}
+</script>
+
+</body>
+</html>

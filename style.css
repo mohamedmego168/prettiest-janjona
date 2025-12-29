@@ -1,0 +1,84 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffe6ea;
+}
+
+.card {
+    background: white;
+    width: 340px;
+    padding: 22px;
+    border-radius: 35px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.card h1 {
+    font-family: 'Great Vibes', cursive;
+    color: #c83b6f;
+    font-size: 38px;
+    margin-bottom: 12px;
+}
+
+.image-box img {
+    width: 100%;
+    border-radius: 18px;
+    max-height: 120px;
+    object-fit: cover;
+    border: 3px solid #ffd6de;
+}
+
+.btn {
+    font-family: 'Great Vibes', cursive;
+    background: #b02a4e;
+    color: white;
+    border: none;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-size: 24px;
+    margin: 14px 0;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(176,42,78,0.4);
+}
+
+audio {
+    width: 100%;
+    margin-top: 6px;
+}
+
+.hidden {
+    display: none;
+}
+
+#msg {
+    font-family: 'Great Vibes', cursive;
+    font-size: 34px;
+    color: #c83b6f;
+    margin-top: 16px;
+    line-height: 1.3;
+
+    /* ✨ الإضافة */
+    opacity: 0;                  /* يبدأ مخفي */
+    animation: fade 1.5s forwards;
+}
+
+/* ✨ Animation */
+@keyframes fade {
+    to {
+        opacity: 1;
+    }
+}
+.heart {
+    display: inline-block;
+    animation: beat 1.2s infinite;
+}
+
+@keyframes beat {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.3); }
+}
+
